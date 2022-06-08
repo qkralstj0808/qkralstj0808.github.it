@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/05stylememberlist.css">
+    <title>MemberList</title>
+
+  
+    <script>
+        window.onload = () => renderGuestbook();
+    </script>
+</head>
+
+<body>
+
+    <table id="tb-guestbook">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>이름</th>
+                <th>아이디</th>
+                <th>전화번호</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+    <script>
+        const renderGuestbook = (guestbooks = JSON.parse(localStorage.getItem("guestbooks"))) => {
+            if (!guestbooks) return;
+            const tbody = document.querySelector("#tb-guestbook tbody");
+            tbody.innerHTML = "";
+            guestbooks
+                .map((guestbooks, index) => {
+                    const {username, id, phone} = guestbooks;
+                    console.log(username, id, phone);
+                    return `<tr>
+            <td>${index + 1}</td>
+            <td>${username}</td>
+            <td>${id}</td>
+            <td>${phone}</td>
+          </tr>`;
+                })
+                .forEach((tr) => {
+                    tbody.innerHTML += tr;
+                });
+        }
+
+    
+    </script>
+</body>
+
+</html>

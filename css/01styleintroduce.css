@@ -1,0 +1,149 @@
+.wrapper:hover {
+    transform: scale(1.1, 1.1);
+   
+}
+
+
+.wrapper {
+text-align: center;
+float: left;
+width: 300px;
+height: 450px;
+background-color:rgb(255, 254, 240);
+margin: 40px 50px 40px ;
+position: relative;
+left: 130px;
+top: 33px;
+
+box-shadow: 3px 6px 8px  darkgray;
+
+
+
+}
+div.wrapper.relative{
+margin-top: 100px;
+
+}
+.wrapper .box img{
+width: 250px;
+height: 350px;
+padding: 25px;
+text-align: center;
+
+}
+div.wrap1.relative {
+position: relative;
+bottom: 630px;
+}
+
+.comment {
+display: flex;
+justify-content: flex-start;
+
+/* 메인축정렬 */
+align-items: center;
+}
+
+
+ul#additional.menu.relative {
+text-align: right;
+
+}
+
+.itsme_wrapper {
+text-align: right;
+bottom: 10px;
+}
+
+
+#itsme {
+height: 460px;
+width: 380px;
+padding-right: 90px;
+
+}
+
+.basicinfo {
+left: 480px;
+color: rgba(66, 30, 30, 0.987);
+font-family: 'Bebas Neue', cursive;
+font-size: 70px;
+
+}
+
+.basicinfo2 {
+    left: 594px;
+    color: rgba(154, 116, 100, 0.987);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;    
+
+}
+
+.additional {
+left: 100px;
+font-family: 'Bebas Neue', cursive;
+}
+
+
+.menu {
+height: 500px;
+width: 800px;
+background-color: rgb(255, 255, 255);
+box-shadow: 5px 5px 8px lightgray;
+left: 100px;
+border-radius: 3%;
+
+}
+
+.title {
+font-size: 67px;
+font-weight: bolder;
+text-align: left;
+padding: 90px;
+font-family: 'Bebas Neue', cursive;
+position: relative;
+
+
+}
+.title2 {
+margin-top: -500px;
+font-size: 57px;
+font-weight: bolder;
+text-align: center;
+padding: 90px;
+font-family:  sans-serif;
+font-weight: 500;
+position: relative;
+color: rgb(0, 0, 0);
+
+
+}
+
+body {
+background-color: #f9f8fb;
+}
+
+/* 박스안 텍스트 */
+ul.menu li {
+list-style-type: none;
+font-size: 25px;
+font-family: 'Do Hyeon', sans-serif;
+;
+
+
+
+}
+
+.relative {
+position: relative;
+}
+
+
+.menu {
+list-style-type: none;
+right: 5px;
+}
+
+html{
+    margin-bottom: 110px;
+}

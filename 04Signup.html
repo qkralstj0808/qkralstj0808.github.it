@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/04styleSignup.css">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Do+Hyeon&family=Gamja+Flower&family=Gentium+Plus:wght@400;700&family=IBM+Plex+Sans+KR:wght@100;200&family=Mukta:wght@300&family=Nanum+Gothic:wght@400;700;800&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300&family=Shadows+Into+Light&family=Sunflower&display=swap"
+        rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+    <div class="register">
+        <h3>Sign Up</h3>
+        <form action="javascript:saveGuestbook();" name="guestbookFrm" class="guestbookFrm">
+
+            <div class="flex">
+
+                <!-- 이름입력 폼 -->
+                <ul class="container">
+                    <li class="item center">
+                        이름
+                    </li>
+                    <li class="item">
+                        <input type="text" name="username" id="username" placeholder="이름을 입력하세요" autofocus required>
+                    </li>
+                    <li class="item">
+                    </li>
+                </ul>
+                <!-- 아이디 입력 폼 -->
+                <ul class="container">
+                    <li class="item center">
+                        아이디
+                    </li>
+                    <li class="item">
+                        <input type="text" id="id" placeholder="아이디를 입력하세요." required>
+                    </li>
+                    <li class="item">
+                        <button class="idcheck">중복확인</button>
+                    </li>
+                </ul>
+
+                <!-- 비밀번호 입력폼 -->
+                <ul class="container">
+                    <li class="item center">
+                        비밀번호
+                    </li>
+                    <li class="item">
+                        <input type="password" id="pwd" placeholder="비밀번호를 입력하세요." required>
+                    </li>
+                    <li class="item">
+
+                    </li>
+                </ul>
+
+                <!-- 비밀번호 확인 입력폼 -->
+                <ul class="container">
+                    <li class="item center">
+                        비밀번호 확인
+                    </li>
+                    <li class="item">
+                        <input type="password" id="pwd2" placeholder="비밀번호를 입력하세요." required>
+                    </li>
+                    <li class="item">
+
+                    </li>
+                </ul>
+
+                <!-- 전화번호 입력폼 -->
+                <ul class="container">
+                    <li class="item center">
+                        전화번호
+                    </li>
+                    <li class="item">
+                        <input type="text" id="phone" placeholder="휴대전화번호">
+                    </li>
+                    <li class="item">
+
+                    </li>
+
+                    <!-- 가입하기 제출 버튼 -->
+                </ul>
+                <ul class="container">
+                    <li class="item center">
+
+                    </li>
+                    <li class="item">
+                        <button class="button">가입하기</button>
+                    </li>
+                    <li class="item">
+
+
+
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script>
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
+        /**
+         * 회원가입 전 유효성 검사가 안돼서 주석했습니다 ㅜ,ㅜ 어느 부분에 들어가야 될까요...??
+         */
+
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
+         
+
+
+        // ============ 이름 유효성 검사 ============//
+        
+        // document.querySelector("#name").onblur = (e) => {
+
+        //     const val = e.target.value;
+        //     if (!/^[가-힣]{2,5}$/.test(val)) {
+        //         alert("2~5자의 한글 이름을 입력해주새요");
+        //         return false;
+        //     }
+        // };
+
+
+        // ============ 아이디 유효성 검사 ============= // 
+        
+
+        // document.querySelector("#id").onblur = (e) => {
+        //     const val = e.target.value;
+        //     if (!/^[a-zA-Z0-9]{4,12}$/.test(val)) {
+        //         alert("ID는 4~12자의 영어와 숫자로만 입력해주세요. ");
+        //         return false;
+        //     }
+        // }
+
+
+
+       //================== 비밀번호 유효성 검사 ================// 
+
+
+        // document.querySelector("#pwd").onblur = (e) => {
+        //     const val = e.target.value;
+        //     if (!/^.{8,12}$/.test(val)) {
+        //         alert("비밀번호는 8 ~ 12자리여야 합니다.");
+        //         return false;
+        //     }
+        //     if (!/\d/.test(val)) {
+        //         alert("비밀번호는 하나이상의 숫자를 포함해야 합니다.");
+        //         return false;
+        //     }
+        //     if (!/[a-z]/i.test(val)) {
+        //         alert("비밀번호는 하나이상의 영문자를 포함해야 합니다.");
+        //         return false;
+        //     }
+        //     if (!/[!&/\\*@]/i.test(val)) {
+        //         alert("비밀번호는 하나이상의 특수문자(!&/\\*@)를 포함해야 합니다.");
+        //         return false;
+        //     }
+
+        //     console.log("비밀번호가 유효합니다.");
+        // };
+
+
+        // ========== 비밀번호 확인 유효성 검사 =============== //
+
+
+        // document.querySelector("#pwd2").onblur = (e) => {
+        //     const val = e.target.value;
+        //     if (pwd2.value != pwd.value) {
+        //         alert("비밀번호가 틀립니다. 다시확인하여 입력해주세요. ")
+        //         return false;
+        //     }
+        // }
+
+
+        // ============ 전화번호 유효성 검사 ===================//
+
+        // document.querySelector("#phone").onblur = (e) => {
+        //     const val = e.target.value;
+        //     if (!/^(01[016789]{1})-?[0-9]{3,4}-?[0-9]{4}$/.test(val)) {
+        //         alert("올바른 전화번호를 입력해주세요. ");
+        //         return false;
+        //     };
+        // };
+
+
+
+
+
+
+        class Guestbook {
+            constructor(username, id, pwd, phone) {
+                this.username = username;
+                this.id = id;
+                this.pwd = pwd;
+                this.phone = phone;
+            }
+        }
+
+        const saveGuestbook = () => {
+            // 사용자입력값 
+            const usernameVal = username.value;
+            const useridVal = id.value;
+            const pwdVal = pwd.value;
+            const userphoneVal = phone.value;
+            console.log(usernameVal);
+
+            // guestbook객체
+            const guestbook = new Guestbook(usernameVal, useridVal, pwdVal, userphoneVal);
+
+            // 배열에 저장
+            const guestbooks = JSON.parse(localStorage.getItem("guestbooks")) || [];
+            guestbooks.push(guestbook);
+            // console.log(guestbooks);
+
+            // json
+            const data = JSON.stringify(guestbooks);
+            console.log(data);
+
+            // localStorage에 저장
+            localStorage.setItem('guestbooks', data);
+
+            // 초기화
+            document.guestbookFrm.reset();
+        };
+    </script>
+
+
+
+</body>
+
+
+</html>

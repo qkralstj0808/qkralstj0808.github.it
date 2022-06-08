@@ -1,0 +1,95 @@
+
+        .relative {
+            position: relative;
+        }
+
+        .wrap {
+            text-align: center;
+            top: 230px;
+
+        }
+
+    
+
+        body {
+            background-color: #f9f8fb;
+            margin-top: 35px;
+            margin-left: 23px;
+
+        }
+
+        .parent {
+            height: 4em;
+            overflow-y: hidden;
+            display: block;
+        }
+
+        .parent .child {
+            font-size: 3em;
+            font-weight: bold;
+            line-height: 1;
+            animation-name: grow;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            font-family: 'Bebas Neue', cursive;
+            color: black;
+        }
+
+        /* 키프레임 애니메이션 */
+        @keyframes grow {
+            from {
+                transform: translateY(3em)
+            }
+
+            /* 애니메이션 높이 */
+            to {
+                transform: translateY(0)
+            }
+        }
+
+
+
+
+        .minseopark {
+            font-family: 'Mukta', serif;
+            font-weight: 220;
+            font-size: 45px;
+            color: navy;
+        }
+
+
+
+
+        ul.menu {
+            position: relative;
+            height: 50px;
+            display: flex;
+            justify-content: flex-end
+        }
+
+        ul.menu li {
+            position: relative;
+            font-size: 23px;
+            list-style-type: none;
+            margin-right: 50px;
+            width: 5em;
+            height: 2.2em;
+            text-align: center;
+
+
+        }
+
+        ul.menu li a {
+            display: block;
+            position: relative;
+            padding: .3em;
+            text-decoration: none;
+            color: black;
+            font-weight: lighter;
+            font-family: 'Do Hyeon', sans-serif;
+
+        }
+
+        ul.menu li a:hover {
+            color:navy;
+        }

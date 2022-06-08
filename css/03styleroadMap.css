@@ -1,0 +1,86 @@
+
+            #ccc{
+                height: 400px;
+                width: 700px;
+                margin-top: 41px;
+                box-shadow: 5px 5px 8px lightgray;
+                border-radius: 4%;
+            }
+            
+           
+            #major{
+                width: 800px;
+                margin-top: -104px;
+                box-shadow: 5px 5px 8px lightgray;
+                border-radius: 4%;
+            }
+            div{
+                background-color: white;
+            }
+            
+            div.text2{
+                font-size: 27px;
+                background-color: white;
+            }
+
+            li {
+                background-color: white;
+                list-style-type: none;
+                color: black;
+                font-size: 45px;
+                border-radius: 4;
+            }
+
+            * {
+                background-color: #f9f8fb;
+            }
+
+            .wrap_ {
+                text-align: center;
+                height: 800px;
+                width: 1000px;
+                background-color: rgb(255, 255, 255);
+                color: #1e005b;
+                box-shadow: 5px 5px 8px lightgray;
+                margin-top: 109px;
+                left: 250px;
+            }
+
+            /* 텍스트 박스 */
+            .wrap {
+                height: 1150px;
+                width: 1000px;
+                background-color: rgb(255, 255, 255);
+                color: #1e005b;
+                box-shadow: 5px 5px 8px lightgray;
+                margin-top: 109px;
+                left: 250px;
+                text-align: center;
+                border-radius: 4;
+
+
+            }
+
+            #univer {
+                text-align: left;
+                position: relative;
+                right: 356px;
+                top: -216px;
+                height: 170px;
+                width: 170px;
+                
+            }
+
+            .title {
+                font-size: 62px;
+                font-weight: bolder;
+                text-align: center;
+                position: relative;
+                font-family: 'Bebas Neue', cursive;
+
+
+            }
+
+            .relative {
+                position: relative;
+            }
